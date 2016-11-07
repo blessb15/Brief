@@ -1,0 +1,26 @@
+// VARIABLES
+$blue: rgba(98, 219, 255, 0.3);
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.header-home-button {
+  float: left;
+}
+
+.header-button {
+  padding: 5px 20px 5px 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.header-button:hover {
+  background-color: $blue;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
