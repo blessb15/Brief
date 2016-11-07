@@ -1,3 +1,9 @@
+body {
+  margin: 0px !important; }
+
+.container {
+  text-align: center; }
+
 .header {
   width: 100%;
   text-align: center; }
@@ -9,13 +15,57 @@
   padding: 5px 20px 5px 20px;
   border-style: solid;
   border-width: thin;
-  border-color: white;
+  border-color: transparent;
   cursor: pointer;
-  transition: background-color .3s ease-in-out; }
+  transition: all .3s ease-in-out; }
 
 .header-button:hover {
-  background-color: rgba(98, 219, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(98, 219, 255, 0.7);
   cursor: pointer;
-  transition: background-color .3s ease-in-out; }
+  transition: all .3s ease-in-out; }
+
+.nav-left {
+  position: absolute;
+  margin-top: 50vh;
+  padding: 5px 20px 5px 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: transparent; }
+
+.nav-left:hover {
+  border-color: rgba(98, 219, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+
+.nav-right {
+  float: right;
+  margin-top: 50vh;
+  padding: 5px 20px 5px 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: transparent; }
+
+.nav-right:hover {
+  border-color: rgba(98, 219, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+
+.nav-next-obj {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  padding: 5px 20px 5px 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: transparent; }
+
+.nav-next-obj:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(98, 219, 255, 0.7);
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
 
 /*# sourceMappingURL=app.css.map */
