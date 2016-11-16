@@ -1,84 +1,97 @@
 // VARIABLES
 $blue: rgba(98, 219, 255, 0.7);
+$button-border: 1.5px solid $blue;
 
 body {
   margin: 0px !important;
 }
 
-.container {
-  text-align: center;
+li {
+  list-style: none;
 }
 
 .header {
   width: 100%;
   text-align: center;
+  padding-top: 10px;
+  height: 30px;
 }
 
-.header-home-button {
-  float: left;
+div .header-home-button {
+  cursor: pointer;
+  display: inline !important;
+  left: 20px;
+  position: absolute;
+}
+
+div .header-buttons {
+  cursor: pointer;
+  display: inline !important;
 }
 
 .header-button {
-  padding: 5px 20px 5px 20px;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
+  padding-right: 25px;
+  padding-left: 25px;
+  transition: color, 0.3s, ease-in-out;
 }
 
 .header-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: $blue;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
+  color: red;
+  transition: color, 0.3s, ease-in-out;
 }
 
-.nav-left {
-  position: absolute;
-  margin-top: 50vh;
-  padding: 5px 20px 5px 20px;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0);
-}
-
-.nav-left:hover {
-  border-color: $blue;
-  background-color: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-.nav-right {
-  float: right;
-  margin-top: 50vh;
-  padding: 5px 20px 5px 20px;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0);
-}
-
-.nav-right:hover {
-  border-color: $blue;
-  background-color: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-.nav-next-obj {
-  text-align: center;
+.hover-nav-down {
+  height: 55px;
+  width: 100%;
   position: absolute;
   bottom: 0px;
-  padding: 5px 20px 5px 20px;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0);
+  text-align: center;
 }
 
-.nav-next-obj:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: $blue;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
+span.nav-down-button {
+    position: absolute;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: color, 0.3s, ease-in-out;
+}
+
+span.nav-down-button:hover {
+    color: red;
+    transition: color, 0.3s, ease-in-out;
+}
+
+.page {
+  width: 100%;
+}
+
+.page-img {
+  padding: 20px;
+  width: 400px;
+}
+
+.car {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-specs {
+  float: right;
+  position: relative;
+  bottom: 280px;
+  right: 200px;
+}
+
+.spec-list {
+  li {
+    padding-top: 10px;
+  }
+}
+
+.page-about {
+  padding: 20px;
+  width: 75%;
 }
