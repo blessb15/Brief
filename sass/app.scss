@@ -1,9 +1,18 @@
 // VARIABLES
 $blue: rgba(98, 219, 255, 0.7);
-$button-border: 1.5px solid $blue;
+$border: 1.7px solid ;
+$font1: Questrial;
 
+//FONTS
+@font-face {
+  font-family: Questrial;
+  src: url('../fonts/Questrial.ttf');
+}
+
+//PAGE
 body {
   margin: 0px !important;
+  font-family: $font1;
 }
 
 li {
@@ -15,6 +24,8 @@ li {
   text-align: center;
   padding-top: 10px;
   height: 30px;
+  background-color: $blue;
+  color: white;
 }
 
 div .header-home-button {
@@ -30,22 +41,29 @@ div .header-buttons {
 }
 
 .header-button {
-  padding-right: 25px;
   padding-left: 25px;
   transition: color, 0.3s, ease-in-out;
 }
 
 .header-button:hover {
-  color: red;
+  color: $blue;
   transition: color, 0.3s, ease-in-out;
 }
 
-.hover-nav-down {
+.footer-nav-down {
   height: 55px;
   width: 100%;
   position: absolute;
   bottom: 0px;
   text-align: center;
+}
+
+.footer-nav-down:hover {
+  background-color: $blue;
+  transition: all, 0.7s, ease-in-out;
+  span.nav-down-button {
+    color: white;
+  }
 }
 
 span.nav-down-button {
@@ -56,42 +74,58 @@ span.nav-down-button {
 }
 
 span.nav-down-button:hover {
-    color: red;
+    color: white;
     transition: color, 0.3s, ease-in-out;
 }
 
 .page {
   width: 100%;
+  margin-top: 50px;
+}
+
+.page-price {
+  padding-left: 50px;
+  padding-bottom: 15px;
+}
+
+.price {
+  font-size: 30px;
 }
 
 .page-img {
-  padding: 20px;
+  padding: 0 0 15px 50px;
   width: 400px;
 }
 
 .car {
   width: 400px;
   height: 250px;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-specs {
   float: right;
   position: relative;
   bottom: 280px;
-  right: 200px;
+  right: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding-right: 100px;
+  padding-bottom: 15px;
+  border-radius: 2px;
+  margin-top: 20px;
 }
 
 .spec-list {
+
+  padding-left: 20px !important;
+
   li {
     padding-top: 10px;
+    font-size: 20px;
   }
 }
 
 .page-about {
-  padding: 20px;
+  padding: 0px 0px 0px 50px;
   width: 75%;
 }
