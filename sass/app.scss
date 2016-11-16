@@ -13,29 +13,33 @@ $font1: Questrial;
 body {
   margin: 0px !important;
   font-family: $font1;
+  height: 100vh;
+  width: 100vw;
 }
 
 li {
   list-style: none;
 }
 
+///CONTROLS
 .header {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   padding-top: 10px;
   height: 30px;
   background-color: $blue;
   color: white;
+  font-size: 20px;
 }
 
-div .header-home-button {
+div.header-home-button {
   cursor: pointer;
   display: inline !important;
   left: 20px;
   position: absolute;
 }
 
-div .header-buttons {
+div.header-buttons {
   cursor: pointer;
   display: inline !important;
 }
@@ -51,14 +55,23 @@ div .header-buttons {
 }
 
 .footer-nav-down {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $blue;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  cursor: pointer;
   height: 55px;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   bottom: 0px;
   text-align: center;
+  transition: all, 0.7s, ease-in-out;
 }
 
 .footer-nav-down:hover {
+  cursor: pointer;
   background-color: $blue;
   transition: all, 0.7s, ease-in-out;
   span.nav-down-button {
@@ -67,23 +80,47 @@ div .header-buttons {
 }
 
 span.nav-down-button {
-    position: absolute;
-    padding-top: 20px;
-    cursor: pointer;
-    transition: color, 0.3s, ease-in-out;
+  font-size: 20px;
+  color: $blue;
+  position: absolute;
+  padding-top: 20px;
+  cursor: pointer;
+  transition: color, 0.3s, ease-in-out;
 }
 
-span.nav-down-button:hover {
-    color: white;
-    transition: color, 0.3s, ease-in-out;
+.contact-div {
+  display: block;
+  margin-top: 70px;
+  text-align: center;
 }
 
+.contact-button {
+  display: inline-block;
+  border-style: solid;
+  border-color: $blue;
+  border-width: 2px;
+  width: 200px;
+  padding: 25px;
+  font-size: 25px;
+  color: $blue;
+  transition: all, 0.7s, ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: $blue;
+  color: white;
+  transition: all, 0.7s, ease-in-out;
+}
+
+///CAR PAGE DETAILS
 .page {
-  width: 100%;
+  width: 100vw;
   margin-top: 50px;
+  text-align: center;
 }
 
 .page-price {
+  float: left;
   padding-left: 50px;
   padding-bottom: 15px;
 }
@@ -103,9 +140,10 @@ span.nav-down-button:hover {
 }
 
 .page-specs {
+  text-align: left;
+  position: absolute;
   float: right;
-  position: relative;
-  bottom: 280px;
+  bottom: 400px;
   right: 50px;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
@@ -116,7 +154,6 @@ span.nav-down-button:hover {
 }
 
 .spec-list {
-
   padding-left: 20px !important;
 
   li {
@@ -126,6 +163,7 @@ span.nav-down-button:hover {
 }
 
 .page-about {
-  padding: 0px 0px 0px 50px;
-  width: 75%;
+  text-align: left;
+  padding-left: 50px;
+  width: 60%;
 }
