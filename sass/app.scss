@@ -15,6 +15,7 @@ body {
   font-family: $font1;
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
 
 li {
@@ -55,33 +56,20 @@ div.header-buttons {
 }
 
 .footer-nav-down {
-  border-style: solid;
-  border-width: 2px;
-  border-color: $blue;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 0px;
-  cursor: pointer;
-  height: 55px;
-  width: 100vw;
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  transition: all, 0.7s, ease-in-out;
-}
-
-.footer-nav-down:hover {
   cursor: pointer;
   background-color: $blue;
+  height: 55px;
+  width: 100vw;
+  text-align: center;
+  margin-top: 30px;
   transition: all, 0.7s, ease-in-out;
-  span.nav-down-button {
-    color: white;
-  }
+  position: fixed;
+  bottom: 0;
 }
 
 span.nav-down-button {
   font-size: 20px;
-  color: $blue;
+  color: white;
   position: absolute;
   padding-top: 20px;
   cursor: pointer;
@@ -95,6 +83,7 @@ span.nav-down-button {
 }
 
 .contact-button {
+  cursor: pointer;
   display: inline-block;
   border-style: solid;
   border-color: $blue;
@@ -120,9 +109,8 @@ span.nav-down-button {
 }
 
 .page-price {
-  float: left;
-  padding-left: 50px;
   padding-bottom: 15px;
+  display: block;
 }
 
 .price {
@@ -130,8 +118,9 @@ span.nav-down-button {
 }
 
 .page-img {
-  padding: 0 0 15px 50px;
+  padding: 0 0 15px 0px;
   width: 400px;
+  display: inline;
 }
 
 .car {
@@ -140,8 +129,10 @@ span.nav-down-button {
 }
 
 .page-specs {
+  margin-right: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
   text-align: left;
-  position: absolute;
   float: right;
   bottom: 60%;
   right: 50px;
@@ -150,7 +141,6 @@ span.nav-down-button {
   padding-right: 100px;
   padding-bottom: 15px;
   border-radius: 2px;
-  margin-top: 20px;
 }
 
 .spec-list {
