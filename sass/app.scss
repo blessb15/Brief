@@ -6,7 +6,7 @@ $font1: Questrial;
 //FONTS
 @font-face {
   font-family: Questrial;
-  src: url('../fonts/Questrial.ttf');
+  src: url('../fonts/Questrial-Regular.ttf');
 }
 
 //PAGE
@@ -16,6 +16,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  color: gray;
 }
 
 li {
@@ -38,21 +39,6 @@ div.header-home-button {
   display: inline !important;
   left: 20px;
   position: absolute;
-}
-
-div.header-buttons {
-  cursor: pointer;
-  display: inline !important;
-}
-
-.header-button {
-  padding-left: 25px;
-  transition: color, 0.3s, ease-in-out;
-}
-
-.header-button:hover {
-  color: $blue;
-  transition: color, 0.3s, ease-in-out;
 }
 
 .footer-nav-down {
@@ -78,7 +64,7 @@ span.nav-down-button {
 
 .contact-div {
   display: block;
-  margin-top: 70px;
+  margin-top: 45px;
   text-align: center;
 }
 
@@ -88,9 +74,9 @@ span.nav-down-button {
   border-style: solid;
   border-color: $blue;
   border-width: 2px;
-  width: 200px;
+  width: 150px;
   padding: 25px;
-  font-size: 25px;
+  font-size: 20px;
   color: $blue;
   transition: all, 0.7s, ease-in-out;
 }
@@ -102,19 +88,38 @@ span.nav-down-button {
 }
 
 ///CAR PAGE DETAILS
+.active {
+  display: block !important;
+}
+
 .page {
   width: 100vw;
   margin-top: 50px;
   text-align: center;
 }
 
+.page-1 {
+  display: none;
+}
+
+.page-2 {
+  display: none;
+}
+
+.page-3 {
+  display: none;
+}
+
 .page-price {
   padding-bottom: 15px;
   display: block;
+  width: 100vw;
+  text-align: left;
 }
 
 .price {
   font-size: 30px;
+  margin-left: 50px;
 }
 
 .page-img {
@@ -124,8 +129,13 @@ span.nav-down-button {
 }
 
 .car {
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .page-specs {
@@ -138,9 +148,8 @@ span.nav-down-button {
   right: 50px;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  padding-right: 100px;
+  padding-right: 50px;
   padding-bottom: 15px;
-  border-radius: 2px;
 }
 
 .spec-list {
