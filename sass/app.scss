@@ -43,14 +43,13 @@ div.header-home-button {
 
 .footer-nav-down {
   cursor: pointer;
+  display: block;
   background-color: $blue;
   height: 55px;
   width: 100vw;
   text-align: center;
   margin-top: 30px;
   transition: all, 0.7s, ease-in-out;
-  position: fixed;
-  bottom: 0;
 }
 
 span.nav-down-button {
@@ -129,8 +128,9 @@ span.nav-down-button {
 }
 
 .car {
-  width: 500px;
-  height: 300px;
+  width: 75vw;
+  height: 40vh;
+  max-width: 500px;
 }
 
 hr {
@@ -139,21 +139,24 @@ hr {
 }
 
 .page-specs {
+  display: inline-block;
+  padding-right: 15px;
   margin-right: 50px;
   margin-left: 30px;
-  margin-top: 10px;
   text-align: left;
   float: right;
   bottom: 60%;
   right: 50px;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  padding-right: 50px;
-  padding-bottom: 15px;
 }
 
 .spec-list {
   padding-left: 20px !important;
+
+  li:first-child {
+    padding-top: 0px;
+  }
 
   li {
     padding-top: 10px;
@@ -163,6 +166,35 @@ hr {
 
 .page-about {
   text-align: left;
-  padding-left: 50px;
+  margin-left: 50px;
   width: 60%;
+  margin-top: 25px;
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 670px){
+  .car-details {
+    text-align: center;
+  }
+
+  .page-specs {
+    display: inline-block !important;
+    margin-top: 25px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 80vw !important;
+    float: none !important;
+  }
+
+  .page-about {
+    display: inline-block !important;
+    margin-left: 0px !important;
+    width: 85vw !important;
+  }
+
+  .contact-div {
+    margin-top: 25px !important;
+  }
+
 }

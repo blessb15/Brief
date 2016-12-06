@@ -29,14 +29,13 @@ div.header-home-button {
 
 .footer-nav-down {
   cursor: pointer;
+  display: block;
   background-color: rgba(98, 219, 255, 0.7);
   height: 55px;
   width: 100vw;
   text-align: center;
   margin-top: 30px;
-  transition: all, 0.7s, ease-in-out;
-  position: fixed;
-  bottom: 0; }
+  transition: all, 0.7s, ease-in-out; }
 
 span.nav-down-button {
   font-size: 20px;
@@ -101,35 +100,58 @@ span.nav-down-button {
   display: inline; }
 
 .car {
-  width: 500px;
-  height: 300px; }
+  width: 75vw;
+  height: 40vh;
+  max-width: 500px; }
 
 hr {
   margin-left: 50px;
   margin-right: 50px; }
 
 .page-specs {
+  display: inline-block;
+  padding-right: 15px;
   margin-right: 50px;
   margin-left: 30px;
-  margin-top: 10px;
   text-align: left;
   float: right;
   bottom: 60%;
   right: 50px;
   background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding-right: 50px;
-  padding-bottom: 15px; }
+  color: white; }
 
 .spec-list {
   padding-left: 20px !important; }
+  .spec-list li:first-child {
+    padding-top: 0px; }
   .spec-list li {
     padding-top: 10px;
     font-size: 20px; }
 
 .page-about {
   text-align: left;
-  padding-left: 50px;
-  width: 60%; }
+  margin-left: 50px;
+  width: 60%;
+  margin-top: 25px; }
+
+@media screen and (max-width: 670px) {
+  .car-details {
+    text-align: center; }
+
+  .page-specs {
+    display: inline-block !important;
+    margin-top: 25px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 80vw !important;
+    float: none !important; }
+
+  .page-about {
+    display: inline-block !important;
+    margin-left: 0px !important;
+    width: 85vw !important; }
+
+  .contact-div {
+    margin-top: 25px !important; } }
 
 /*# sourceMappingURL=app.css.map */
