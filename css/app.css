@@ -28,14 +28,15 @@ div.header-home-button {
   position: absolute; }
 
 .footer-nav-down {
+  position: fixed;
+  bottom: 0px;
   cursor: pointer;
   display: block;
   background-color: rgba(98, 219, 255, 0.7);
   height: 55px;
   width: 100vw;
   text-align: center;
-  margin-top: 30px;
-  transition: all, 0.7s, ease-in-out; }
+  margin-top: 30px; }
 
 span.nav-down-button {
   font-size: 20px;
@@ -68,7 +69,10 @@ span.nav-down-button {
   transition: all, 0.7s, ease-in-out; }
 
 .active {
-  display: block !important; }
+  display: inline-block !important; }
+
+.active2 {
+  display: inline-block !important; }
 
 .page {
   width: 100vw;
@@ -99,10 +103,26 @@ span.nav-down-button {
   width: 400px;
   display: inline; }
 
+.img-selector {
+  display: block; }
+
+.img-selector div {
+  font-size: 35px;
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer; }
+
+.img-selector .current {
+  color: rgba(98, 219, 255, 0.7); }
+
 .car {
   width: 75vw;
   height: 40vh;
-  max-width: 500px; }
+  max-width: 500px;
+  display: none; }
 
 hr {
   margin-left: 50px;
